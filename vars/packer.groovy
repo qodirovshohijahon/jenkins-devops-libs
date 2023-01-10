@@ -200,10 +200,10 @@ void plugins(config) {
 
   // check for optional inputs
   // conditional based on command to double verify dir param input both exists and is valid
-  if (config.command === 'required') {
-    assert config.dir instanceof String : 'The required "dir" parameter was not set.'
-    assert fileExists(config.dir) : "The Packer config directory ${config.dir} does not exist!"
-  }
+//   if (config.command === 'required') {
+//     assert config.dir instanceof String : 'The required "dir" parameter was not set.'
+//     assert fileExists(config.dir) : "The Packer config directory ${config.dir} does not exist!"
+//   }
 
   // interact with packer plugins
   try {
