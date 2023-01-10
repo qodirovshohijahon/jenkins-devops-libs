@@ -206,20 +206,20 @@ void plugins(config) {
 //   }
 
   // interact with packer plugins
-  try {
-    if (config.command === 'required') {
-      dir(config.dir) {
-        sh(label: 'Packer Plugins', script: "${cmd} .")
-      }
-    }
-    else {
-      sh(label: 'Packer Plugins', script: cmd)
-    }
-  }
-  catch(Exception error) {
-    print 'Failure using packer plugins.'
-    throw error
-  }
+//   try {
+//     if (config.command === 'required') {
+//       dir(config.dir) {
+//         sh(label: 'Packer Plugins', script: "${cmd} .")
+//       }
+//     }
+//     else {
+//       sh(label: 'Packer Plugins', script: cmd)
+//     }
+//   }
+//   catch(Exception error) {
+//     print 'Failure using packer plugins.'
+//     throw error
+//   }
   print 'Packer plugins executed successfully.'
 }
 
